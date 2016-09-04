@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/rglsm/.nvm/versions/node/v6.5.0/bin/node',
+1 verbose cli   '/home/rglsm/.nvm/versions/node/v6.5.0/bin/npm',
+1 verbose cli   'dist-tags',
+1 verbose cli   'ls' ]
+2 info using npm@3.10.6
+3 info using node@v6.5.0
+4 silly mapToRegistry name @rglsm/how-to-npm
+5 silly mapToRegistry scope (from package name) @rglsm
+6 verbose mapToRegistry no registry URL found in name for scope @rglsm
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry http://localhost:15443/
+9 silly mapToRegistry data Result {
+9 silly mapToRegistry   raw: '@rglsm/how-to-npm',
+9 silly mapToRegistry   scope: '@rglsm',
+9 silly mapToRegistry   escapedName: '@rglsm%2fhow-to-npm',
+9 silly mapToRegistry   name: '@rglsm/how-to-npm',
+9 silly mapToRegistry   rawSpec: '',
+9 silly mapToRegistry   spec: 'latest',
+9 silly mapToRegistry   type: 'tag' }
+10 silly mapToRegistry uri http://localhost:15443/@rglsm%2fhow-to-npm
+11 verbose request uri http://localhost:15443/-/package/@rglsm%2fhow-to-npm/dist-tags
+12 verbose request no auth needed
+13 info attempt registry request try #1 at 8:17:29 PM
+14 verbose request id 93a6b4ff189d4a1d
+15 http request GET http://localhost:15443/-/package/@rglsm%2fhow-to-npm/dist-tags
+16 http 404 http://localhost:15443/-/package/@rglsm%2fhow-to-npm/dist-tags
+17 verbose headers { 'content-type': 'application/json',
+17 verbose headers   date: 'Sun, 04 Sep 2016 12:17:29 GMT',
+17 verbose headers   connection: 'keep-alive',
+17 verbose headers   'content-length': '19' }
+18 error dist-tag ls Couldn't get dist-tag data for @rglsm/how-to-npm
+19 verbose stack Error: missing : -/package/@rglsm%2fhow-to-npm/dist-tags
+19 verbose stack     at makeError (/home/rglsm/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+19 verbose stack     at CachingRegistryClient.<anonymous> (/home/rglsm/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+19 verbose stack     at Request._callback (/home/rglsm/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+19 verbose stack     at Request.self.callback (/home/rglsm/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+19 verbose stack     at emitTwo (events.js:106:13)
+19 verbose stack     at Request.emit (events.js:191:7)
+19 verbose stack     at Request.<anonymous> (/home/rglsm/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+19 verbose stack     at emitOne (events.js:101:20)
+19 verbose stack     at Request.emit (events.js:188:7)
+19 verbose stack     at IncomingMessage.<anonymous> (/home/rglsm/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+20 verbose statusCode 404
+21 verbose cwd /home/rglsm/Desktop/Code/nodeschool/how-to-npm
+22 error Linux 4.4.0-36-generic
+23 error argv "/home/rglsm/.nvm/versions/node/v6.5.0/bin/node" "/home/rglsm/.nvm/versions/node/v6.5.0/bin/npm" "dist-tags" "ls"
+24 error node v6.5.0
+25 error npm  v3.10.6
+26 error code E404
+27 error 404 missing : -/package/@rglsm%2fhow-to-npm/dist-tags
+28 verbose exit [ 1, true ]
